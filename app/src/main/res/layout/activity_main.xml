@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dystans (km)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editFuelConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDistance"
+        android:layout_marginTop="16dp"
+        android:hint="Spalanie (l/100km)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editFuelPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFuelConsumption"
+        android:layout_marginTop="16dp"
+        android:hint="Cena paliwa (PLN/l)" />
+
+    <EditText
+        android:id="@+id/editPassengers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFuelPrice"
+        android:layout_marginTop="16dp"
+        android:hint="Liczba pasażerów"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPassengers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Oblicz koszt" />
+</RelativeLayout>
